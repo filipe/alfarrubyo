@@ -4,7 +4,8 @@ class CreateBooks < ActiveRecord::Migration
       t.integer :publisher_id
       t.integer :book_category_id
       t.string  :title, :limit => 100
-      t.string  :isbn, :limit => 40
+      t.string  :isbn10, :limit => 10
+      t.string  :isbn13, :limit => 13
       t.date    :released_at
       t.integer :edition
       t.timestamps
